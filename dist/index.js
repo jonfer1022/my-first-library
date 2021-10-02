@@ -9,5 +9,6 @@ const suma = (a, b) => {
 };
 exports.default = {
     suma,
-    multiplicar: otherFuctions_1.default.multiplicar
+    multiplicar: otherFuctions_1.default.multiplicar,
+    dividir: otherFuctions_1.default.dividir
 };
