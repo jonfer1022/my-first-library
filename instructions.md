@@ -7,5 +7,5 @@ npm set save-exact true (Optional I think)
 cat ~/.npmrc (get credentials configured)
 npm adduser
 npm init
-<!-- You have to validate that the name your project already exist or get errors -->
+<!-- You have to validate that the name your project already doen't exist or get errors -->
 npm publish (When you already create the login about your library)
