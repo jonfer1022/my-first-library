@@ -1,15 +1,29 @@
 {
   "name": "my-first-library",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Something description",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "RMDIR /Q/S dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "nodemon index.ts --exec ts-node"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jonathan F. Amaya B. <jonathanfab92@gmail.com> (https://www.npmjs.com/~jonathanfab92)",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.4.3"
-  }
+    "nodemon": "2.0.13",
+    "ts-node": "10.2.1",
+    "typescript": "4.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonfer1022/my-first-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonfer1022/my-first-library/issues"
+  },
+  "homepage": "https://github.com/jonfer1022/my-first-library#readme"
 }
