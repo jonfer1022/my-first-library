@@ -1,3 +1,6 @@
+
+const restar = (a: number, b: number) => a - b;
+
 const multiplicar = (a: number, b: number) => a * b;
 
 const dividir = (a: number, b: number) => {
@@ -5,6 +8,7 @@ const dividir = (a: number, b: number) => {
 }
 
 export default {
+  restar,
   multiplicar,
   dividir
 }

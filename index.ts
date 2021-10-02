@@ -6,6 +6,7 @@ const suma = (a: number, b: number) => {
 
 export default {
   suma,
+  restar: functions.restar,
   multiplicar: functions.multiplicar,
   dividir: functions.dividir
 }

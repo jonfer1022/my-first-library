@@ -1,6 +1,6 @@
 {
   "name": "my-first-library-jfab",
-  "version": "1.0.4",
+  "version": "1.0.5-beta.0",
   "description": "Something description",
   "main": "dist/index.js",
   "devDependencies": {
