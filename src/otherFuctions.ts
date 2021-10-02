@@ -1,3 +1,4 @@
+const sumar = (a: number, b: number) => a + b;
 
 const restar = (a: number, b: number) => a - b;
 
@@ -8,6 +9,7 @@ const dividir = (a: number, b: number) => {
 }
 
 export default {
+  sumar,
   restar,
   multiplicar,
   dividir

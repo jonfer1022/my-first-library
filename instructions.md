@@ -9,3 +9,7 @@ npm adduser
 npm init
 <!-- You have to validate that the name your project already doen't exist or get errors -->
 npm publish (When you already create the login about your library)
+git tag vx.x.x <!-- Asociado a un commit -->
+git push --tags
+npm publish --tag beta <!-- Asociar a una versión beta -->
+npm info name_project
