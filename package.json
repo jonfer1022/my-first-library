@@ -1,6 +1,6 @@
 {
   "name": "my-first-library-jfab",
-  "version": "0.0.0-development",
+  "version": "1.1.0-development",
   "description": "Something description",
   "main": "dist/index.js",
   "devDependencies": {
@@ -20,6 +20,7 @@
     "commit": "git-cz",
     "clean": "RMDIR /Q/S dist",
     "test": "mocha src/*.test.ts -w",
+    "test-single": "mocha src/*.test.ts",
     "build": "tsc",
     "start": "tsc && node dist/index.js",
     "dev": "nodemon index.ts --exec ts-node",
