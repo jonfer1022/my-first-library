@@ -1,6 +1,6 @@
 {
   "name": "my-first-library-jfab",
-  "version": "1.1.0",
+  "version": "0.0.0-development",
   "description": "Something description",
   "main": "dist/index.js",
   "devDependencies": {
@@ -8,21 +8,26 @@
     "@types/chai": "4.2.22",
     "@types/mocha": "9.0.0",
     "chai": "4.3.4",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "mocha": "9.1.2",
     "nodemon": "2.0.13",
+    "semantic-release": "^18.0.0",
     "ts-node": "10.2.1",
     "typescript": "4.4.3"
   },
   "scripts": {
+    "commit": "git-cz",
     "clean": "RMDIR /Q/S dist",
     "test": "mocha src/*.test.ts -w",
     "build": "tsc",
     "start": "tsc && node dist/index.js",
-    "dev": "nodemon index.ts --exec ts-node"
+    "dev": "nodemon index.ts --exec ts-node",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonfer1022/my-first-library.git"
+    "url": "https://github.com/jonfer1022/my-first-library.git"
   },
   "keywords": [
     "suma"
@@ -32,5 +37,10 @@
   "bugs": {
     "url": "https://github.com/jonfer1022/my-first-library/issues"
   },
-  "homepage": "https://github.com/jonfer1022/my-first-library#readme"
+  "homepage": "https://github.com/jonfer1022/my-first-library#readme",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }
