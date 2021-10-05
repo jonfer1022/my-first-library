@@ -13,3 +13,7 @@ git tag vx.x.x <!-- Asociado a un commit -->
 git push --tags
 npm publish --tag beta <!-- Asociar a una versión beta -->
 npm info name_project
+<!-- to make push github, follow this steps -->
+git add
+npm run commit
+<!-- Seguir los estandares de commits gz-cz -->

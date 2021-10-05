@@ -48,4 +48,9 @@ describe(('Pruebas unitarias generales'), () => {
     expect(numero).to.not.equal(1);
   })
 
+  it('Probando función división con denominador 0',() => {
+    let numero = functions.dividir(4,0);
+    expect(numero).to.equal('No puedes divir por 0');
+  })
+
 });
