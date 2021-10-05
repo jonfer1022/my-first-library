@@ -31,7 +31,7 @@
     "test-single": "mocha src/*.test.ts",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test-single",
     "check-coverage": "nyc check-coverage --statements 70 --branches 70 --functions 70 --lines 70",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "report-coverage": "cat ./coverage/lcov.info || codecov",
     "build": "tsc",
     "start": "tsc && node dist/index.js",
     "dev": "nodemon index.ts --exec ts-node",
